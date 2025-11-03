@@ -1,0 +1,19 @@
+# Node
+node_modules/
+pnpm-lock.yaml
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Env
+*.env
+!.env.example
+
+# Build
+frontend/dist/
+backend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
