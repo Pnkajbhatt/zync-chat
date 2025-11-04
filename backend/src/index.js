@@ -4,6 +4,7 @@ import { Server as SocketIOServer } from "socket.io";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 // ---- Placeholder routes ----
+app.use("/api/auth", authRoutes);
 app.get("/api/health", (req, res) => res.json({ status: "OK" }));
 
 // ---- Socket placeholder ----
